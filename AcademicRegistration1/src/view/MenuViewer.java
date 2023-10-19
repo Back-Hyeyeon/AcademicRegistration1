@@ -1,7 +1,7 @@
 package view;
 
 import java.util.Scanner;
-
+// 화면 설계만 보여주는 클래스
 public class MenuViewer {
 	//MenuViewer를 다른 곳에서 불러 스캐너인 choice를 사용 하게 하기
 	public static Scanner choice = new Scanner(System.in);
