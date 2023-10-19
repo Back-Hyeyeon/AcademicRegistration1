@@ -59,12 +59,15 @@ public class UniversityRegisterCoursesMain {
 //	수강신청메뉴
 	public static void traineeMenu() throws Exception {
 		int choice;
-
+		//TraineeRegisterManager클래스 객체선언
 		TraineeRegisterManager traineeManager = new TraineeRegisterManager();
+		//MenuViewer 클래스에 있는 traineeMenu수강신청 뷰를 가져온다.
 		MenuViewer.traineeMenu();
+		//MenuViewer 클래스에 있는 choice로 정의한 Scanner을 사용하여 Int로 값을 넣는다.
 		choice = MenuViewer.choice.nextInt();
-		MenuViewer.choice.nextLine();
+		MenuViewer.choice.nextLine(); //버퍼제거
 		switch (choice) {
+		//TRAINEE_CHOICE클래스 안에 있는 LIST는 select역활을 한다.
 		case TRAINEE_CHOICE.LIST:
 			System.out.println("");
 			traineeManager.traineeList();
@@ -77,6 +80,7 @@ public class UniversityRegisterCoursesMain {
 			System.out.println("");
 			traineeManager.traineeDelete();
 			break;
+			//MAIN으로 나가다.
 		case TRAINEE_CHOICE.MAIN:
 			return;
 		default:
@@ -86,27 +90,33 @@ public class UniversityRegisterCoursesMain {
 //	학과메뉴
 	public static void subjectMenu() throws Exception {
 		int choice;
+		
 		SubjectRegisterManager subjectManager = new SubjectRegisterManager();
 		MenuViewer.subjectMenu();
 		choice = MenuViewer.choice.nextInt();
 		MenuViewer.choice.nextLine();
 		switch (choice) {
+		//select 전체보기
 		case SUBJECT_CHOICE.LIST:
 			System.out.println("");
 			subjectManager.subjectList();
 			break;
+		//삽입
 		case SUBJECT_CHOICE.INSERT:
 			System.out.println("");
 			subjectManager.subjectRegistr();
 			break;
+		//수정
 		case SUBJECT_CHOICE.UPDATE:
 			System.out.println("");
 			subjectManager.subjectUpdate();
 			break;
+		//삭제
 		case SUBJECT_CHOICE.DELETE:
 			System.out.println("");
 			subjectManager.subjectDelete();
 			break;
+		//MAIN 으로 나가다.
 		case SUBJECT_CHOICE.MAIN:
 			return;
 		default:
@@ -116,6 +126,7 @@ public class UniversityRegisterCoursesMain {
 //	학생메뉴
 	public static void studentMenu() throws Exception {
 		int choice;
+		
 		StudentRegisterManager studnetManager = new StudentRegisterManager();
 		MenuViewer.studentMenu();
 		choice = MenuViewer.choice.nextInt();
@@ -142,6 +153,7 @@ public class UniversityRegisterCoursesMain {
 //	과목메뉴
 	public static void lessonMenu() throws Exception {
 		int choice;
+		
 		LessonRegisterManager lessonManager = new LessonRegisterManager();
 		MenuViewer.lessonMenu();
 		choice = MenuViewer.choice.nextInt();
