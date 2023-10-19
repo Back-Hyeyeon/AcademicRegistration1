@@ -19,4 +19,54 @@ public class MenuViewer {
 		System.out.println("번호 선택 : ");
 	}
 
+	//학과메뉴
+	public static void subjectMenu() {
+		System.out.println();
+		System.out.println("학과 정보 메뉴 번호를 입력하세요.");
+		System.out.println("1. 학과 정보 목록");
+		System.out.println("2. 학과 정보 입력");
+		System.out.println("3. 학과 정보 수정");
+		System.out.println("4. 학과 정보 삭제");
+		System.out.println("5. 메인 메뉴");
+		System.out.print("번호 선택 : ");
+	}
+	
+	//학생메뉴
+	public static void studentMenu() {
+		System.out.println();
+		System.out.println("학생 정보 메뉴 번호를 입력하세요.");
+		System.out.println("1. 학생 정보 입력");
+		System.out.println("2. 학생 정보 수정");
+		System.out.println("3. 학생 전체 목록");
+		System.out.println("4. 메인 메뉴");
+		System.out.print("번호 선택 : ");
+	}
+	
+	//과목메뉴
+	public static void lessonMenu() {
+		System.out.println();
+		System.out.println("과목 정보 메뉴 번호를 입력하세요.");
+		System.out.println("1. 과목 정보 목록");
+		System.out.println("2. 과목 정보 입력");
+		System.out.println("3. 과목 정보 수정");
+		System.out.println("4. 과목 정보 삭제");
+		System.out.println("5. 메인 메뉴");
+		System.out.print("번호 선택 : ");
+	}
+	
+	//수강신청메뉴
+	public static void traineeMenu() {
+		System.out.println();
+		System.out.println("수강 정보 메뉴 번호를 입력하세요.");
+		System.out.println("1. 수강 신청 목록");
+		System.out.println("2. 수강 신청");
+		System.out.println("3. 수강 취소");
+		System.out.println("4. 메인 메뉴");
+		System.out.print("번호 선택 : ");
+	}
+
+	
+
+	
+	
 }
