@@ -78,9 +78,7 @@ public class StudentVO {
 	public String getSd_date() {
 		return sd_date;
 	}
-	//this.no = no;
-	//this.sd_num = sd_num;
-	//this.sd_name = sd_name;
+	
 	
 	@Override
 	public boolean equals(Object obj) {

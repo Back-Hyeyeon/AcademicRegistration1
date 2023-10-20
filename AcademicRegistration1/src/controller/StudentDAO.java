@@ -1,7 +1,10 @@
 package controller;
 
+import model.StudentVO;
+
 public class StudentDAO {
-	public static void main(String[] args) {
+	public void setStudentRegiste(StudentVO svo) {
+//		String sql = 
 		
 	}
 }
