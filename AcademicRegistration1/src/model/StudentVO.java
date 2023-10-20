@@ -80,6 +80,51 @@ public class StudentVO {
 	}
 	
 	
+	
+	public void setNo(int no) {
+		this.no = no;
+	}
+
+	public void setSd_num(String sd_num) {
+		this.sd_num = sd_num;
+	}
+
+	public void setSd_name(String sd_name) {
+		this.sd_name = sd_name;
+	}
+
+	public void setSd_id(String sd_id) {
+		this.sd_id = sd_id;
+	}
+
+	public void setSd_passwd(String sd_passwd) {
+		this.sd_passwd = sd_passwd;
+	}
+
+	public void setS_num(String s_num) {
+		this.s_num = s_num;
+	}
+
+	public void setSd_birthday(String sd_birthday) {
+		this.sd_birthday = sd_birthday;
+	}
+
+	public void setSd_phone(String sd_phone) {
+		this.sd_phone = sd_phone;
+	}
+
+	public void setSd_address(String sd_address) {
+		this.sd_address = sd_address;
+	}
+
+	public void setSd_email(String sd_email) {
+		this.sd_email = sd_email;
+	}
+
+	public void setSd_date(String sd_date) {
+		this.sd_date = sd_date;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 //		StudentVO suvo = null;
@@ -93,6 +138,9 @@ public class StudentVO {
 		return Objects.hash(this.no,this.sd_num,this.sd_name);
 		
 	}
+
+
+
 
 	
 	
