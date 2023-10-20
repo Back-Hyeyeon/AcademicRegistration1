@@ -51,12 +51,12 @@ public class SubjectVO {
 
 	@Override
 	public String toString() {
-		return String.format("일련번호 : %d,학과명 : %s,학과번호 : %s", getNo(),getS_num(),getS_name());
+		return String.format("일련번호 : %d, 학과번호 : %s, 학과명 : %s", getNo(),getS_num(),getS_name());
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(no, s_num);
+		return Objects.hash(this.s_num,this.s_name);
 	}
 
 	@Override
@@ -64,7 +64,7 @@ public class SubjectVO {
 //		SubjectVO sjvo = null;
 		if(!(obj instanceof SubjectVO)) {return false;}
 		SubjectVO sjvo = (SubjectVO)obj;
-		return sjvo.no == this.no && sjvo.s_num.equals(this.s_num);
+		return sjvo.s_num.equals(this.s_num) && sjvo.s_name.equals(this.s_name);
 	}
 
 
