@@ -18,6 +18,21 @@ public class LessonVo {
 		this.l_name = l_name;
 	}
 
+	
+	
+	
+	public void setNo(int no) {
+		this.no = no;
+	}
+
+	public void setL_abbre(String l_abbre) {
+		this.l_abbre = l_abbre;
+	}
+
+	public void setL_name(String l_name) {
+		this.l_name = l_name;
+	}
+
 	public int getNo() {
 		return no;
 	}
@@ -42,6 +57,8 @@ public class LessonVo {
 	public int hashCode() {
 		return Objects.hash(no, l_name);
 	}
+
+
 
 
 

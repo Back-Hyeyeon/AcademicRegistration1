@@ -265,7 +265,7 @@ public class StudentDAO {
 				sVo.setSd_phone(rs.getString("sd_phone"));
 				sVo.setSd_address(rs.getString("sd_address"));
 				sVo.setSd_email(rs.getString("sd_email"));
-				sVo.setSd_date(rs.getDate("sd_date") + "");
+				sVo.setSd_date(rs.getDate("sd_date") + "");//date 타입을 ""를 붙여서 문자열 타입으로 변환
 				System.out.println(sVo.getNo() + "\t" + sVo.getSd_num() + "\t" + sVo.getSd_name() + "\t"
 						+ sVo.getSd_id() + "\t" + sVo.getSd_passwd() + "\t" + sVo.getS_num() + "\t\t"
 						+ sVo.getSd_birthday() + "\t" + sVo.getSd_phone() + "\t" + sVo.getSd_address() + "\t\t"

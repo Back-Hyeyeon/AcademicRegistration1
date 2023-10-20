@@ -1,5 +1,7 @@
 package controller;
 
-public class TraineeDAO {
 
+
+public class TraineeDAO {
+	
 }
